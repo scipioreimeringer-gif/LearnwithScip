@@ -108,6 +108,9 @@
   }
 
   /* ---------- header ---------- */
+  html{scroll-behavior:smooth;}
+  section[id],[id="prijzen"]{scroll-margin-top:88px;}
+  .prices-head{margin-top:64px;}
   header.bar{
     position:sticky;top:0;z-index:20;
     background:color-mix(in srgb, var(--ground) 88%, transparent);
@@ -392,6 +395,7 @@
   @media (max-width:860px){
     .hero-grid{grid-template-columns:1fr;gap:34px;}
     .hero-visual{order:-1;}
+    section[id],[id="prijzen"]{scroll-margin-top:124px;}
     .hero-visual .card-3{display:none;}
     .hero-photo{aspect-ratio:4/5;max-height:62vh;object-position:center 38%;}
     .two{grid-template-columns:1fr;}
@@ -562,6 +566,10 @@
           <p data-i18n="about.p2">Nu reis ik op de motor door Zuid-Amerika en geef ik online les aan leerlingen in Europa en Latijns-Amerika. Ik spreek zeven talen, dus ik weet niet alleen hoe je een taal uitlegt, maar ook hoe het voelt om er middenin te zitten en het even niet meer te snappen.</p>
           <p data-i18n="about.p3">Voor Nederlands werk ik met een eigen leerlijn van A0 tot C1, per grammaticaonderdeel opgebouwd, met uitleg, oefeningen en de fouten die bijna iedereen maakt.</p>
         </div>
+      </div>
+      <div class="sec-head prices-head" id="prijzen">
+        <span class="eyebrow" data-i18n="price.eyebrow">Prijzen</span>
+        <h2 data-i18n="price.h2">Vooraf duidelijk, voordeliger per pakket</h2>
       </div>
       <div class="two">
         <div class="price-panel">
