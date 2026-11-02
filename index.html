@@ -376,6 +376,116 @@
   .dl-note{font-size:.8rem;color:var(--muted);}
   .dl-or{font-size:.88rem;color:var(--muted);text-align:center;}
 
+  /* ---------- aankondiging ---------- */
+  .announce{background:var(--ink);color:var(--ground);font-size:.86rem;}
+  .announce .shell{display:flex;gap:8px 12px;justify-content:center;align-items:center;flex-wrap:wrap;padding-block:8px;text-align:center;}
+  .announce .pip{width:7px;height:7px;border-radius:50%;background:var(--coral);flex:none;}
+  .announce a{color:var(--ground);font-weight:700;text-underline-offset:3px;}
+
+  /* ---------- cursus ---------- */
+  .course{
+    display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,44px);align-items:start;
+    background:var(--teal-soft);border-radius:var(--radius);padding:clamp(24px,4vw,44px);
+  }
+  .course-copy{display:flex;flex-direction:column;gap:14px;}
+  .course-copy > p{color:var(--ink);opacity:.85;max-width:52ch;}
+  .facts{display:grid;grid-template-columns:auto 1fr;gap:0;margin:6px 0 0;}
+  .facts dt,.facts dd{padding:10px 0;border-bottom:1px solid color-mix(in srgb, var(--teal) 22%, transparent);margin:0;}
+  .facts dt{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-deep);padding-right:18px;padding-top:13px;}
+  .facts dd{font-size:.96rem;}
+  .facts dd strong{font-family:var(--display);}
+  .fcard{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(20px,3vw,30px);box-shadow:0 26px 50px -34px rgba(15,42,46,.6);
+    display:flex;flex-direction:column;gap:14px;
+  }
+  .field{display:flex;flex-direction:column;gap:6px;}
+  .field > label,.field > .lbl{font-size:.84rem;font-weight:700;}
+  .field input[type=text],.field input[type=email],.field input[type=tel],.field select,.field textarea,.mini input{
+    font:inherit;font-size:.96rem;width:100%;min-width:0;
+    padding:11px 13px;border-radius:var(--radius);border:1px solid var(--line-strong);
+    background:var(--ground);color:var(--ink);
+  }
+  .field textarea{min-height:76px;resize:vertical;}
+  .field .hint{font-size:.8rem;color:var(--muted);}
+  .field .hint a{color:var(--teal);font-weight:700;}
+  .two-f{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .days{display:flex;gap:8px;flex-wrap:wrap;}
+  .days label{position:relative;cursor:pointer;}
+  .days input{position:absolute;opacity:0;inset:0;cursor:pointer;}
+  .days span{display:inline-block;padding:8px 14px;border-radius:100px;border:1px solid var(--line-strong);font-size:.9rem;font-weight:600;background:var(--ground);}
+  .days input:checked + span{background:var(--teal);border-color:var(--teal);color:#fff;}
+  .days input:focus-visible + span{outline:2px solid var(--coral);outline-offset:2px;}
+  .check{display:flex;gap:10px;align-items:flex-start;font-size:.9rem;cursor:pointer;}
+  .check input{margin-top:4px;accent-color:var(--teal);width:16px;height:16px;flex:none;}
+  .fcard .btn{justify-content:center;}
+  .fsmall{font-size:.8rem;color:var(--muted);}
+  .fmsg{font-size:.92rem;padding:12px 14px;border-radius:var(--radius);background:var(--teal-soft);color:var(--teal-deep);font-weight:600;}
+  .fmsg.err{background:var(--coral-soft);color:var(--coral);}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
+
+  /* ---------- gratis ---------- */
+  .free3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .free{
+    background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--teal);
+    border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:12px;
+  }
+  .free.c2{border-top-color:var(--coral);}
+  .free .meta{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);}
+  .free > p{color:var(--muted);font-size:.95rem;}
+  .free .go{margin-top:auto;padding-top:6px;display:flex;flex-direction:column;gap:8px;align-items:stretch;}
+  .free .go > .btn{align-self:flex-start;}
+  .mini{display:flex;flex-direction:column;gap:8px;}
+  .mini .btn{justify-content:center;}
+  .small{font-size:.8rem;color:var(--muted);}
+  .hero-test{font-size:.95rem;}
+  .hero-test a{color:var(--teal);font-weight:700;text-decoration:none;border-bottom:1px solid var(--line-strong);}
+
+  /* ---------- niveautest (venster) ---------- */
+  .tmodal{position:fixed;inset:0;z-index:60;background:rgba(6,16,15,.72);display:flex;align-items:center;justify-content:center;padding:16px;}
+  .tbox{position:relative;width:100%;max-width:680px;max-height:calc(100vh - 32px);overflow:auto;background:var(--surface);border-radius:8px;padding:clamp(22px,5vw,38px);box-shadow:0 40px 80px -30px rgba(0,0,0,.6);}
+  .tclose{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--ground);color:var(--ink);font-size:1.25rem;line-height:1;cursor:pointer;}
+  .q-stack{display:flex;flex-direction:column;gap:14px;}
+  .q-pills{display:flex;flex-wrap:wrap;gap:7px;}
+  .q-progress{display:flex;align-items:center;gap:12px;margin:4px 44px 20px 0;}
+  .q-track{flex:1;height:6px;background:var(--teal-soft);border-radius:100px;overflow:hidden;}
+  .q-fill{height:100%;width:0;background:var(--teal);border-radius:100px;transition:width .25s ease;}
+  .q-count{font-size:.82rem;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums;}
+  .q-ask{font-size:.88rem;font-weight:700;color:var(--coral);}
+  .q-prompt{font-family:var(--display);font-weight:700;font-size:clamp(1.3rem,4vw,1.7rem);line-height:1.3;letter-spacing:-0.01em;margin:6px 0 20px;}
+  .q-prompt .gap{display:inline-block;min-width:2.6em;border-bottom:3px solid var(--coral);margin:0 .12em;}
+  .q-opts{display:grid;gap:10px;}
+  .q-opt{font:inherit;text-align:left;width:100%;padding:13px 15px;border-radius:var(--radius);border:1px solid var(--line-strong);background:var(--ground);color:var(--ink);font-size:1rem;cursor:pointer;display:flex;gap:12px;align-items:center;}
+  @media (hover:hover){.q-opt:hover{border-color:var(--teal);background:var(--teal-soft);}}
+  .q-opt.picked{border-color:var(--teal);background:var(--teal-soft);}
+  .q-opt .k{flex:none;width:26px;height:26px;border-radius:50%;border:1px solid var(--line-strong);display:grid;place-items:center;font-size:.78rem;font-weight:700;color:var(--muted);}
+  .q-idk{margin-top:14px;background:none;border:none;font:inherit;color:var(--muted);font-size:.9rem;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:4px 0;}
+  .q-top{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-right:40px;}
+  .q-badge{flex:none;width:100px;height:100px;border-radius:22px;background:var(--teal);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:2.5rem;letter-spacing:-0.03em;position:relative;}
+  .q-badge:after{content:"";position:absolute;top:11px;right:11px;width:13px;height:13px;border-radius:50%;background:var(--coral);}
+  .q-scale{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:16px;}
+  .q-scale span{font-size:.75rem;font-weight:700;text-align:center;padding:6px 0;border-radius:3px;background:var(--tint);color:var(--muted);}
+  .q-scale span.on{background:var(--teal);color:#fff;}
+  .q-sign{margin-top:22px;border-top:1px solid var(--line);padding-top:20px;display:flex;flex-direction:column;gap:12px;}
+  .q-muted{color:var(--muted);}
+  [hidden]{display:none!important;}
+  body.locked{overflow:hidden;}
+
+  @media (max-width:860px){
+    .course{grid-template-columns:1fr;}
+    .free3{grid-template-columns:1fr;}
+  }
+  @media (max-width:480px){
+    .two-f{grid-template-columns:1fr;}
+    .announce{font-size:.8rem;}
+    .announce .pip{display:none;}
+    .brand{font-size:.9rem;}
+    .bar-in{gap:8px;}
+    .langs button{padding:4px 8px;}
+    .bar .btn-sm{padding:7px 11px;font-size:.8rem;}
+  }
+  @media (max-width:420px){.bar .btn-sm{display:none;}}
+
   /* ---------- faq ---------- */
   .faq{display:grid;grid-template-columns:1fr 1fr;gap:24px 40px;}
   .qa{display:flex;flex-direction:column;gap:6px;}
@@ -421,13 +531,16 @@
 
 </head>
 <body>
+<div class="announce"><div class="shell"><span class="pip"></span><span data-i18n="ann.t" data-fill>Nieuw: groepscursus Nederlands, start {start}.</span><a href="#cursus" data-i18n="ann.a">Schrijf je in</a></div></div>
 <header class="bar">
   <div class="shell bar-in">
     <a class="brand" href="#top"><span class="dot"></span>Scipio Reimeringer</a>
     <nav class="mainnav">
       <a href="#aanbod" data-i18n="nav.aanbod">Aanbod</a>
+      <a href="#cursus" data-i18n="nav.cursus">Cursus januari</a>
       <a href="#prijzen" data-i18n="nav.prijzen">Prijzen</a>
       <a href="#over" data-i18n="nav.over">Over mij</a>
+      <a href="#test" class="open-test" data-i18n="nav.test">Gratis test</a>
     </nav>
     <div class="langs" role="group" aria-label="Taal / Language / Idioma">
       <button type="button" data-lang="nl" aria-pressed="true">NL</button>
@@ -453,6 +566,7 @@
           </a>
           <a class="btn btn-ghost" href="#prijzen" data-i18n="hero.cta2">Bekijk de prijzen</a>
         </div>
+        <p class="hero-test"><a href="#test" class="open-test" data-i18n="hero.test">Of doe eerst de gratis niveautest (5 minuten) &rarr;</a></p>
         <div class="chips">
           <span class="chip" data-i18n="chip.1">Bevoegd docent</span>
           <span class="chip" data-i18n="chip.2">Educatieve master, Universiteit Utrecht</span>
@@ -503,6 +617,73 @@
             <li data-i18n="serv.kids.5">Lessen van 50 minuten, of 25 minuten voor kinderen onder de 9</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GROEPSCURSUS ====================
+       Data, prijs en niveaus pas je aan in het script onderaan: zoek naar "var COURSE". -->
+  <section id="cursus">
+    <div class="shell">
+      <div class="course">
+        <div class="course-copy">
+          <span class="eyebrow" data-i18n="c.eyebrow">Nieuw · groepscursus</span>
+          <h2 data-i18n="c.h2">Groepscursus Nederlands in januari</h2>
+          <p data-i18n="c.p" data-fill>{weeks} weken lang elke week samen Nederlands praten, met maximaal {max} mensen op hetzelfde niveau. Goedkoper dan privéles, en je leert ook van de anderen.</p>
+          <dl class="facts">
+            <dt data-i18n="c.k1">Start</dt><dd data-i18n="c.v1" data-fill><strong>{start}</strong></dd>
+            <dt data-i18n="c.k2">Duur</dt><dd data-i18n="c.v2" data-fill>{weeks} weken, één les van {minutes} minuten per week</dd>
+            <dt data-i18n="c.k3">Niveaus</dt><dd data-i18n="c.v3" data-fill>{levels}. Niet zeker? Doe eerst de test.</dd>
+            <dt data-i18n="c.k4">Groep</dt><dd data-i18n="c.v4" data-fill>Maximaal {max} mensen. De groep start vanaf {min} inschrijvingen.</dd>
+            <dt data-i18n="c.k5">Prijs</dt><dd data-i18n="c.v5" data-fill><strong>€ {total}</strong> voor {weeks} lessen (€ {price} per les)</dd>
+            <dt data-i18n="c.k6">Waar</dt><dd data-i18n="c.v6">Online via Zoom, 's avonds Nederlandse tijd</dd>
+            <dt data-i18n="c.k7">Betalen</dt><dd data-i18n="c.v7">Pas als je groep zeker doorgaat. Inschrijven is gratis en vrijblijvend.</dd>
+          </dl>
+        </div>
+
+        <form class="fcard" id="course-form" novalidate>
+          <h3 data-i18n="f.h">Schrijf je in</h3>
+          <div class="field"><label for="cf-naam" data-i18n="f.naam">Naam</label><input id="cf-naam" name="naam" type="text" autocomplete="name" required></div>
+          <div class="two-f">
+            <div class="field"><label for="cf-email" data-i18n="f.email">E-mailadres</label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="cf-wa" data-i18n="f.wa">WhatsApp (optioneel)</label><input id="cf-wa" name="whatsapp" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="field">
+            <label for="cf-niveau" data-i18n="f.niveau">Jouw niveau</label>
+            <select id="cf-niveau" name="niveau" required>
+              <option value="" data-i18n="o.0">Kies je niveau</option>
+              <option value="A0" data-i18n="o.A0">Beginner (A0)</option>
+              <option value="A1" data-i18n="o.A1">A1</option>
+              <option value="A2" data-i18n="o.A2">A2</option>
+              <option value="B1" data-i18n="o.B1">B1 of hoger</option>
+              <option value="?" data-i18n="o.x">Weet ik niet</option>
+            </select>
+            <span class="hint"><a href="#test" class="open-test" data-i18n="f.testlink">Weet je het niet? Doe de test (5 minuten)</a></span>
+          </div>
+          <div class="field">
+            <span class="lbl" data-i18n="f.avond">Welke avonden kun je? Meerdere mag.</span>
+            <div class="days">
+              <label><input type="checkbox" name="avond" value="maandag"><span data-i18n="d.1">Ma</span></label>
+              <label><input type="checkbox" name="avond" value="dinsdag"><span data-i18n="d.2">Di</span></label>
+              <label><input type="checkbox" name="avond" value="woensdag"><span data-i18n="d.3">Wo</span></label>
+              <label><input type="checkbox" name="avond" value="donderdag"><span data-i18n="d.4">Do</span></label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-tijd" data-i18n="f.tijd">Liefst om (Nederlandse tijd)</label>
+            <select id="cf-tijd" name="tijd">
+              <option value="19:00">19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="maakt niet uit" data-i18n="t.x">Maakt niet uit</option>
+            </select>
+          </div>
+          <div class="field"><label for="cf-doel" data-i18n="f.doel">Waarom leer je Nederlands? (optioneel)</label><textarea id="cf-doel" name="doel" data-i18n-ph="f.doelph" placeholder="Bijvoorbeeld: werk, inburgering, vrienden"></textarea></div>
+          <label class="check"><input type="checkbox" name="nieuwsbrief" value="ja" checked><span data-i18n="f.news">Stuur me ook de nieuwsbrief en de gratis pdf</span></label>
+          <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary" type="submit" data-i18n="f.send">Zet me op de lijst</button>
+          <p class="fsmall" data-i18n="f.small" data-fill>Inschrijven is gratis. Uiterlijk {deadline} hoor je of je groep doorgaat.</p>
+          <p class="fmsg" role="status" hidden></p>
+        </form>
       </div>
     </div>
   </section>
@@ -583,7 +764,7 @@
           <div class="prow"><span class="what" data-i18n="price.nl.2">Losse les<small data-i18n="price.nl.2s">60 minuten, één op één</small></span><span class="amt">€ 50</span></div>
           <div class="prow"><span class="what" data-i18n="price.nl.3">Pakket van 5 lessen<small data-i18n="price.nl.3s">€ 47 per les</small></span><span class="amt">€ 235</span></div>
           <div class="prow best"><span class="what" data-i18n="price.nl.4">Pakket van 10 lessen<small data-i18n="price.nl.4s">€ 45 per les, meest gekozen</small></span><span class="amt">€ 450</span></div>
-          <div class="prow"><span class="what" data-i18n="price.nl.5">Groepsles<small data-i18n="price.nl.5s">Per persoon per les, maximaal zes deelnemers</small></span><span class="amt">€ 28</span></div>
+          <div class="prow"><span class="what" data-i18n="price.nl.5">Groepsles<small data-i18n="price.nl.5s">Per persoon per les, maximaal zes deelnemers</small></span><span class="amt">€ 25</span></div>
           <div class="prow"><span class="what" data-i18n="price.nl.6">Zakelijk en incompany<small data-i18n="price.nl.6s">Op factuur, offerte op maat</small></span><span class="amt" data-i18n="price.from85">vanaf € 85</span></div>
         </div>
         <div class="price-panel">
@@ -603,21 +784,47 @@
 
   <section id="gratis">
     <div class="shell">
-      <div class="dl">
-        <div class="dl-copy">
-          <span class="eyebrow" data-i18n="dl.eyebrow">Gratis</span>
-          <h3 data-i18n="dl.h">De twintig lastigste punten van de Nederlandse grammatica</h3>
-          <p data-i18n="dl.p">Een pdf met de fouten die bijna al mijn leerlingen maken, met uitleg en voorbeelden. De woordvolgorde, het woordje 'er', 't kofschip, en waarom niemand weet wanneer je 'of' of 'als' gebruikt.</p>
+      <div class="sec-head">
+        <span class="eyebrow" data-i18n="free.eyebrow">Gratis</span>
+        <h2 data-i18n="free.h2">Begin gratis, zonder iets te boeken</h2>
+        <p data-i18n="free.p">Kijk eerst waar je staat, proef een groepsles en oefen een beetje mee. Kost niks.</p>
+      </div>
+      <div class="free3">
+        <div class="free">
+          <span class="meta" data-i18n="free.1.meta">5 minuten</span>
+          <h3 data-i18n="free.1.h">Gratis niveautest</h3>
+          <p data-i18n="free.1.p">15 vragen, van heel makkelijk tot best moeilijk. Je ziet meteen of je ongeveer A0, A1, A2 of B1 bent en welke groep bij je past.</p>
+          <div class="go"><a class="btn btn-primary open-test" href="#test" data-i18n="free.1.btn">Doe de test</a></div>
         </div>
-        <div class="dl-action">
-          <a class="btn btn-primary" id="dl-direct" href="nederlandse-grammatica.pdf" target="_blank" rel="noopener" data-i18n="dl.dl">Download de pdf</a>
-          <a class="wa dl-or" href="#" data-wa-msg="pdf" data-i18n="dl.or">of vraag hem even via WhatsApp</a>
-          <form class="dl-form" id="dl-form" hidden>
-            <label class="sr-only" for="dl-email" data-i18n="dl.label">E-mailadres</label>
-            <input id="dl-email" type="email" name="email" required placeholder="jouw@email.nl" data-i18n-ph="dl.ph">
-            <button class="btn btn-primary" type="submit" data-i18n="dl.send">Stuur de pdf</button>
-          </form>
-          <p class="dl-note" id="dl-note" data-i18n="dl.note">Geen nieuwsbrief elke week. Af en toe een les of een aankondiging van een nieuwe groep.</p>
+        <div class="free c2">
+          <span class="meta" data-i18n="free.2.meta">Eén keer per maand</span>
+          <h3 data-i18n="free.2.h">Gratis groepsles</h3>
+          <p data-i18n="free.2.p">30 minuten online, samen met andere leerlingen. Zo merk je hoe een groepsles bij mij voelt. Ik mail je de datum en de link.</p>
+          <div class="go">
+            <form class="mini" id="free-form" novalidate>
+              <label class="sr-only" for="ff-email" data-i18n="f.email">E-mailadres</label>
+              <input id="ff-email" name="email" type="email" required autocomplete="email" data-i18n-ph="free.ph" placeholder="jouw@email.nl">
+              <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <button class="btn btn-primary" type="submit" data-i18n="free.2.btn">Ik doe mee</button>
+              <p class="fmsg" role="status" hidden></p>
+            </form>
+          </div>
+        </div>
+        <div class="free" id="nieuwsbrief">
+          <span class="meta" data-i18n="free.3.meta">Gratis pdf</span>
+          <h3 data-i18n="free.3.h">De twintig lastigste grammaticapunten</h3>
+          <p data-i18n="free.3.p">Met uitleg en voorbeelden. Daarna krijg je elke twee weken een korte mail met een leuk feitje en een oefening.</p>
+          <div class="go">
+            <form class="mini" id="pdf-form" novalidate>
+              <label class="sr-only" for="pf-email" data-i18n="f.email">E-mailadres</label>
+              <input id="pf-email" name="email" type="email" required autocomplete="email" data-i18n-ph="free.ph" placeholder="jouw@email.nl">
+              <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <button class="btn btn-primary" type="submit" data-i18n="free.3.btn">Stuur me de pdf</button>
+              <p class="fmsg" role="status" hidden></p>
+              <a class="btn btn-ghost" id="pdf-link" href="nederlandse-grammatica.pdf" target="_blank" rel="noopener" hidden data-i18n="free.3.dl">Download de pdf</a>
+            </form>
+            <span class="small" data-i18n="free.note">Uitschrijven kan altijd, met één klik.</span>
+          </div>
         </div>
       </div>
     </div>
@@ -645,6 +852,14 @@
         <div class="qa">
           <h4 data-i18n="faq.4.q">Kan mijn werkgever dit betalen?</h4>
           <p data-i18n="faq.4.a">Vaak wel. Veel bedrijven hebben een opleidingsbudget en in sommige sectoren is er subsidie voor taaltraining. Ik stuur een factuur op naam van je werkgever, dus vragen kost niets.</p>
+        </div>
+        <div class="qa">
+          <h4 data-i18n="faq.5.q">Wat als de groep niet vol komt?</h4>
+          <p data-i18n="faq.5.a">Een groep start vanaf vier mensen. Zijn er te weinig inschrijvingen, dan hoor je dat ruim van tevoren en betaal je niks. Je kunt dan ook kiezen voor privéles.</p>
+        </div>
+        <div class="qa">
+          <h4 data-i18n="faq.6.q">Hoe weet ik welk niveau ik heb?</h4>
+          <p data-i18n="faq.6.a">Doe de gratis niveautest van 5 minuten. Twijfel je daarna nog, dan check ik het in de eerste les.</p>
         </div>
       </div>
     </div>
@@ -675,6 +890,62 @@
 
 </main>
 
+<!-- ==================== NIVEAUTEST ====================
+     Opent via elke link naar #test. Link voor je bio: learnwithscip.com/#test -->
+<div class="tmodal" id="test" role="dialog" aria-modal="true" aria-labelledby="q-h1" hidden>
+  <div class="tbox">
+    <button class="tclose" type="button" id="q-close" aria-label="Sluiten">&times;</button>
+
+    <div class="q-stack" id="q-start">
+      <span class="eyebrow" data-q="eyebrow">Gratis niveautest</span>
+      <h2 id="q-h1" data-q="h1">Wat is jouw niveau Nederlands?</h2>
+      <p class="q-muted" data-q="intro"></p>
+      <div class="q-pills"><span class="chip" data-q="f1"></span><span class="chip" data-q="f2"></span><span class="chip" data-q="f3"></span></div>
+      <p class="small" data-q="tip"></p>
+      <div><button class="btn btn-primary" id="q-go" type="button" data-q="start"></button></div>
+    </div>
+
+    <div id="q-quiz" hidden>
+      <div class="q-progress"><div class="q-track" aria-hidden="true"><div class="q-fill" id="q-fill"></div></div><span class="q-count" id="q-count"></span></div>
+      <p class="q-ask" id="q-ask"></p>
+      <p class="q-prompt" id="q-prompt"></p>
+      <div class="q-opts" id="q-opts" role="group"></div>
+      <button class="q-idk" id="q-idk" type="button" data-q="idk"></button>
+    </div>
+
+    <div id="q-result" hidden>
+      <div class="q-top">
+        <div class="q-badge" id="q-badge">A2</div>
+        <div class="q-stack" style="gap:6px;flex:1;min-width:200px">
+          <span class="eyebrow" data-q="your"></span>
+          <h2 id="q-title"></h2>
+          <p class="q-muted" id="q-score"></p>
+        </div>
+      </div>
+      <div class="q-scale" aria-hidden="true"><span data-l="A0">A0</span><span data-l="A1">A1</span><span data-l="A2">A2</span><span data-l="B1">B1</span></div>
+      <p id="q-text" style="margin-top:18px"></p>
+      <p class="small" style="margin-top:8px" data-q="disclaimer"></p>
+
+      <form class="q-sign" id="q-form" novalidate>
+        <h3 data-q="s.h"></h3>
+        <p class="q-muted" data-q="s.p"></p>
+        <div class="two-f">
+          <div class="field"><label for="qf-naam" data-q="s.naam"></label><input id="qf-naam" name="naam" type="text" autocomplete="name"></div>
+          <div class="field"><label for="qf-email" data-q="s.email"></label><input id="qf-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <label class="check"><input type="checkbox" name="cursus" value="ja" checked><span data-q="s.course"></span></label>
+        <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div><button class="btn btn-primary" type="submit" data-q="s.send"></button></div>
+        <p class="fmsg" role="status" hidden></p>
+      </form>
+      <div class="row-btns" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
+        <a class="btn btn-ghost" href="#cursus" id="q-tocourse" data-q="tocourse"></a>
+        <button class="btn btn-ghost" id="q-again" type="button" data-q="again"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 /* ==========================================================================
    INSTELLINGEN
@@ -682,13 +953,55 @@
 var WHATSAPP_NUMBER = "31641728755";   // landcode zonder + en zonder spaties
 var EMAIL           = "scipio.reimeringer@gmail.com";
 
+/* FORMULIEREN: maak gratis een access key op web3forms.com (vul je e-mailadres in, de key komt per mail).
+   Plak hem hieronder. Leeg = inschrijvingen gaan via WhatsApp. */
+var WEB3FORMS_KEY   = "88e89126-9388-4add-beac-c275b3b97fc6";
+
+/* GROEPSCURSUS: pas hier de data en prijs aan, de site rekent de rest zelf uit. */
+var COURSE = {
+  start:    "2027-01-11",   // eerste les (jaar-maand-dag)
+  deadline: "2026-12-20",   // uiterlijk dan hoort iedereen of de groep doorgaat
+  weeks:    8,              // aantal lessen (één per week)
+  minutes:  60,
+  price:    25,             // per persoon per les
+  max:      6,
+  min:      4,
+  levels:   { nl: "A1 en A2", en: "A1 and A2", es: "A1 y A2" }
+};
+
 var YOUTUBE_ID_NL   = "-UyXCFoxV2s";   // video die opent als de site in het NEDERLANDS staat
 var YOUTUBE_ID_INT  = "ofjU0lzg-sY";   // video die opent bij Engels en Spaans; leeg = geen video
-var FORM_ENDPOINT   = "";              // Formspree/MailerLite endpoint; leeg = pdf via WhatsApp
 /* ========================================================================== */
 
 var T = {
   en: {
+    "ann.t":"New: Dutch group course, starting {start}.","ann.a":"Sign up",
+    "nav.cursus":"January course","nav.test":"Free test",
+    "hero.test":"Or take the free level test first (5 minutes) &rarr;",
+    "c.eyebrow":"New · group course","c.h2":"Dutch group course in January",
+    "c.p":"{weeks} weeks of speaking Dutch together every week, with no more than {max} people at the same level. Cheaper than private lessons, and you learn from the others too.",
+    "c.k1":"Start","c.v1":"<strong>{start}</strong>",
+    "c.k2":"Length","c.v2":"{weeks} weeks, one {minutes}-minute lesson a week",
+    "c.k3":"Levels","c.v3":"{levels}. Not sure? Take the test first.",
+    "c.k4":"Group","c.v4":"{max} people maximum. The group starts from {min} sign-ups.",
+    "c.k5":"Price","c.v5":"<strong>€ {total}</strong> for {weeks} lessons (€ {price} per lesson)",
+    "c.k6":"Where","c.v6":"Online on Zoom, in the evening, Dutch time",
+    "c.k7":"Payment","c.v7":"Only once your group is confirmed. Signing up is free and without obligation.",
+    "f.h":"Sign up","f.naam":"Name","f.email":"Email address","f.wa":"WhatsApp (optional)","f.niveau":"Your level",
+    "o.0":"Choose your level","o.A0":"Beginner (A0)","o.A1":"A1","o.A2":"A2","o.B1":"B1 or higher","o.x":"I don't know",
+    "f.testlink":"Not sure? Take the test (5 minutes)","f.avond":"Which evenings work for you? Pick as many as you like.",
+    "d.1":"Mon","d.2":"Tue","d.3":"Wed","d.4":"Thu",
+    "f.tijd":"Preferred time (Dutch time)","t.x":"Doesn't matter",
+    "f.doel":"Why are you learning Dutch? (optional)","f.doelph":"For example: work, inburgering, friends",
+    "f.news":"Also send me the newsletter and the free PDF","f.send":"Put me on the list",
+    "f.small":"Signing up is free. By {deadline} you'll hear whether your group goes ahead.",
+    "free.eyebrow":"Free","free.h2":"Start for free, no booking needed","free.p":"See where you stand, try a group class and practise a little. It costs nothing.",
+    "free.1.meta":"5 minutes","free.1.h":"Free level test","free.1.p":"15 questions, from very easy to quite hard. You'll see right away if you're about A0, A1, A2 or B1 and which group fits you.","free.1.btn":"Take the test",
+    "free.2.meta":"Once a month","free.2.h":"Free group class","free.2.p":"30 minutes online, together with other learners. You'll feel what a group class with me is like. I'll email you the date and the link.","free.2.btn":"Count me in",
+    "free.3.meta":"Free PDF","free.3.h":"The twenty hardest grammar points","free.3.p":"With explanations and examples. After that you get a short email every two weeks with a fun fact and an exercise.","free.3.btn":"Send me the PDF","free.3.dl":"Download the PDF",
+    "free.ph":"you@email.com","free.note":"Unsubscribe any time, with one click.",
+    "faq.5.q":"What if the group doesn't fill up?","faq.5.a":"A group starts from four people. If there aren't enough sign-ups, you'll hear well in advance and you pay nothing. You can also switch to private lessons.",
+    "faq.6.q":"How do I know my level?","faq.6.a":"Take the free 5-minute level test. Still not sure? I'll check it in the first lesson.",
     "price.nl.h":"Adults",
     "price.kids.h":"Children and teenagers",
     "price.kids.1":"Trial lesson","price.kids.1s":"30 minutes, meeting child and parent",
@@ -755,13 +1068,6 @@ var T = {
     "price.nl.6":"Business and in-company","price.nl.6s":"Invoiced, quote on request",
     "price.from85":"from € 85","price.from65":"from € 65",
     "price.fine":"Lessons run on Zoom or Google Meet. Packages are paid in advance by bank transfer or payment link. Rescheduling is free up to 24 hours before the lesson. Packages are valid for six months.",
-    "dl.eyebrow":"Free",
-    "dl.h":"The twenty hardest points of Dutch grammar",
-    "dl.p":"A PDF with the mistakes almost all my students make, explained with examples. Word order, the word 'er', 't kofschip, and why nobody knows when to use 'of' or 'als'.",
-    "dl.dl":"Download the PDF","dl.or":"or just ask me for it on WhatsApp",
-    "dl.label":"Email address","dl.ph":"you@email.com","dl.send":"Send me the PDF",
-    "dl.note":"No weekly newsletter. Now and then a lesson or a new group starting.",
-    "dl.ok":"On its way. Check your inbox in a minute.",
     "faq.eyebrow":"Questions",
     "faq.h2":"Before you send a message",
     "faq.1.q":"Do your hours fit around a working day?",
@@ -778,6 +1084,33 @@ var T = {
     "foot.left":"Scipio Reimeringer · Online Dutch lessons"
   },
   es: {
+    "ann.t":"Nuevo: curso de neerlandés en grupo, empieza el {start}.","ann.a":"Apúntate",
+    "nav.cursus":"Curso de enero","nav.test":"Test gratis",
+    "hero.test":"O haz primero el test de nivel gratis (5 minutos) &rarr;",
+    "c.eyebrow":"Nuevo · curso en grupo","c.h2":"Curso de neerlandés en grupo en enero",
+    "c.p":"{weeks} semanas hablando neerlandés juntos cada semana, con un máximo de {max} personas del mismo nivel. Más barato que una clase privada, y también aprendes de los demás.",
+    "c.k1":"Inicio","c.v1":"<strong>{start}</strong>",
+    "c.k2":"Duración","c.v2":"{weeks} semanas, una clase de {minutes} minutos por semana",
+    "c.k3":"Niveles","c.v3":"{levels}. ¿No estás seguro? Haz primero el test.",
+    "c.k4":"Grupo","c.v4":"Máximo {max} personas. El grupo empieza a partir de {min} inscripciones.",
+    "c.k5":"Precio","c.v5":"<strong>€ {total}</strong> por {weeks} clases (€ {price} por clase)",
+    "c.k6":"Dónde","c.v6":"En línea por Zoom, por la tarde, hora de los Países Bajos",
+    "c.k7":"Pago","c.v7":"Solo cuando tu grupo esté confirmado. Apuntarte es gratis y sin compromiso.",
+    "f.h":"Apúntate","f.naam":"Nombre","f.email":"Email","f.wa":"WhatsApp (opcional)","f.niveau":"Tu nivel",
+    "o.0":"Elige tu nivel","o.A0":"Principiante (A0)","o.A1":"A1","o.A2":"A2","o.B1":"B1 o más","o.x":"No lo sé",
+    "f.testlink":"¿No lo sabes? Haz el test (5 minutos)","f.avond":"¿Qué tardes te vienen bien? Puedes elegir varias.",
+    "d.1":"Lun","d.2":"Mar","d.3":"Mié","d.4":"Jue",
+    "f.tijd":"Hora preferida (hora de los Países Bajos)","t.x":"Me da igual",
+    "f.doel":"¿Por qué aprendes neerlandés? (opcional)","f.doelph":"Por ejemplo: trabajo, inburgering, amigos",
+    "f.news":"Mándame también la newsletter y el PDF gratis","f.send":"Apúntame a la lista",
+    "f.small":"Apuntarte es gratis. Antes del {deadline} sabrás si tu grupo sale adelante.",
+    "free.eyebrow":"Gratis","free.h2":"Empieza gratis, sin reservar nada","free.p":"Mira dónde estás, prueba una clase en grupo y practica un poco. No cuesta nada.",
+    "free.1.meta":"5 minutos","free.1.h":"Test de nivel gratis","free.1.p":"15 preguntas, de muy fáciles a bastante difíciles. Verás enseguida si tienes más o menos un A0, A1, A2 o B1 y qué grupo te va mejor.","free.1.btn":"Hacer el test",
+    "free.2.meta":"Una vez al mes","free.2.h":"Clase en grupo gratis","free.2.p":"30 minutos en línea, junto con otros alumnos. Así ves cómo es una clase en grupo conmigo. Te mando la fecha y el enlace por email.","free.2.btn":"Me apunto",
+    "free.3.meta":"PDF gratis","free.3.h":"Los veinte puntos de gramática más difíciles","free.3.p":"Con explicaciones y ejemplos. Después recibes cada dos semanas un email corto con un dato curioso y un ejercicio.","free.3.btn":"Mándame el PDF","free.3.dl":"Descargar el PDF",
+    "free.ph":"tu@email.com","free.note":"Te puedes dar de baja cuando quieras, con un clic.",
+    "faq.5.q":"¿Y si el grupo no se llena?","faq.5.a":"Un grupo empieza a partir de cuatro personas. Si no hay suficientes inscripciones, te aviso con tiempo y no pagas nada. También puedes pasar a clases privadas.",
+    "faq.6.q":"¿Cómo sé mi nivel?","faq.6.a":"Haz el test de nivel gratis de 5 minutos. ¿Sigues con dudas? Lo compruebo en la primera clase.",
     "price.nl.h":"Adultos",
     "price.kids.h":"Niños y adolescentes",
     "price.kids.1":"Clase de prueba","price.kids.1s":"30 minutos, con el niño y el padre o la madre",
@@ -844,13 +1177,6 @@ var T = {
     "price.nl.6":"Empresas e in-company","price.nl.6s":"Con factura, presupuesto a medida",
     "price.from85":"desde € 85","price.from65":"desde € 65",
     "price.fine":"Las clases son por Zoom o Google Meet. Los paquetes se pagan por adelantado, por transferencia o enlace de pago. Cambiar una clase es gratis hasta 24 horas antes. Los paquetes tienen una validez de seis meses.",
-    "dl.eyebrow":"Gratis",
-    "dl.h":"Los veinte puntos más difíciles de la gramática neerlandesa",
-    "dl.p":"Un PDF con los errores que comete casi todo mi alumnado, explicados con ejemplos. El orden de las palabras, la partícula 'er', 't kofschip, y por qué nadie sabe cuándo se usa 'of' o 'als'.",
-    "dl.dl":"Descargar el PDF","dl.or":"o pídemelo por WhatsApp",
-    "dl.label":"Correo electrónico","dl.ph":"tu@email.com","dl.send":"Envíame el PDF",
-    "dl.note":"No es un boletín semanal. De vez en cuando una clase o el aviso de un grupo nuevo.",
-    "dl.ok":"En camino. Revisa tu correo en un minuto.",
     "faq.eyebrow":"Preguntas",
     "faq.h2":"Antes de escribirme",
     "faq.1.q":"¿Los horarios encajan con mi jornada laboral?",
@@ -878,6 +1204,238 @@ var WA_PDF = {
   en: "Hi Scipio, could you send me the PDF with the twenty hardest grammar points?",
   es: "Hola Scipio, me mandas el PDF con los veinte puntos de gramatica mas dificiles?"
 };
+
+
+/* ==========================================================================
+   CURSUS, FORMULIEREN EN NIVEAUTEST
+   ========================================================================== */
+var LANG = "nl";
+var MSG = {
+  nl:{req:"Vul je naam en een geldig e-mailadres in.",reqLvl:"Kies ook je niveau.",reqMail:"Vul een geldig e-mailadres in.",sending:"Even geduld...",
+      okCourse:"Je staat op de lijst! Uiterlijk {deadline} hoor je van me over je groep.",okFree:"Top, je staat erop. Ik mail je de datum van de volgende gratis les.",okPdf:"Top! Hier is je pdf:",okQuiz:"Top! Je krijgt oefeningen voor {lvl} in je mail.",
+      wa:"Bijna klaar: je bericht staat klaar in WhatsApp. Druk daar nog even op verzenden.",err:"Er ging iets mis. Stuur me anders even een bericht op WhatsApp."},
+  en:{req:"Please fill in your name and a valid email address.",reqLvl:"Please choose your level too.",reqMail:"Please fill in a valid email address.",sending:"One moment...",
+      okCourse:"You're on the list! By {deadline} you'll hear from me about your group.",okFree:"Great, you're in. I'll email you the date of the next free class.",okPdf:"Great! Here's your PDF:",okQuiz:"Great! You'll get exercises for {lvl} in your inbox.",
+      wa:"Almost done: your message is ready in WhatsApp. Just press send there.",err:"Something went wrong. Feel free to message me on WhatsApp instead."},
+  es:{req:"Escribe tu nombre y un email válido.",reqLvl:"Elige también tu nivel.",reqMail:"Escribe un email válido.",sending:"Un momento...",
+      okCourse:"¡Ya estás en la lista! Antes del {deadline} te escribo sobre tu grupo.",okFree:"Genial, estás dentro. Te mando por email la fecha de la próxima clase gratis.",okPdf:"¡Genial! Aquí tienes tu PDF:",okQuiz:"¡Genial! Recibirás ejercicios de {lvl} en tu email.",
+      wa:"Casi listo: tu mensaje está preparado en WhatsApp. Solo pulsa enviar.",err:"Algo salió mal. Escríbeme por WhatsApp si quieres."}
+};
+var LOCALE = {nl:"nl-NL", en:"en-GB", es:"es-ES"};
+
+function courseVars(){
+  var d = new Date(COURSE.start + "T12:00:00"), dl = new Date(COURSE.deadline + "T12:00:00");
+  var loc = LOCALE[LANG] || "nl-NL";
+  var start = d.toLocaleDateString(loc, {weekday:"long", day:"numeric", month:"long", year:"numeric"});
+  return {
+    start: start, deadline: dl.toLocaleDateString(loc, {day:"numeric", month:"long"}),
+    weeks: COURSE.weeks, minutes: COURSE.minutes, price: COURSE.price, total: COURSE.weeks * COURSE.price,
+    max: COURSE.max, min: COURSE.min, levels: COURSE.levels[LANG] || COURSE.levels.nl
+  };
+}
+function fillTokens(s, v){ return s.replace(/\{(\w+)\}/g, function(m, k){ return v[k] !== undefined ? v[k] : m; }); }
+
+window.afterLang = function(lang){
+  LANG = lang;
+  var v = courseVars();
+  document.querySelectorAll("[data-fill]").forEach(function(el){ el.innerHTML = fillTokens(el.innerHTML, v); });
+  if(window.quizLang) window.quizLang();
+};
+
+function isMail(s){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s || ""); }
+function showMsg(form, text, bad){
+  var m = form.querySelector(".fmsg"); if(!m) return;
+  m.textContent = text; m.classList.toggle("err", !!bad); m.hidden = false;
+}
+function waOpen(lines){
+  var url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
+  window.open(url, "_blank", "noopener");
+}
+
+/* stuurt een formulier naar Web3Forms (komt in je mail), of zonder key via WhatsApp */
+function sendLead(form, subject, data, okText, waLines, onOk){
+  var M = MSG[LANG] || MSG.nl;
+  var hp = form.querySelector('[name="botcheck"]');
+  if(hp && hp.checked){ showMsg(form, okText); return; }
+  var btn = form.querySelector('button[type="submit"]');
+  if(!WEB3FORMS_KEY){
+    if(waLines) waOpen(waLines);
+    showMsg(form, waLines ? M.wa : okText);
+    if(onOk) onOk();
+    return;
+  }
+  if(btn){ btn.disabled = true; }
+  showMsg(form, M.sending);
+  var body = Object.assign({access_key: WEB3FORMS_KEY, subject: subject, from_name: "learnwithscip.com", taal: LANG, botcheck: false}, data);
+  fetch("https://api.web3forms.com/submit", {
+    method:"POST", headers:{"Content-Type":"application/json","Accept":"application/json"}, body: JSON.stringify(body)
+  }).then(function(r){ return r.json(); }).then(function(j){
+    if(!j || !j.success) throw new Error("fail");
+    showMsg(form, okText); if(onOk) onOk();
+    form.querySelectorAll("input[type=email],input[type=text],input[type=tel],textarea").forEach(function(i){ i.value = ""; });
+  }).catch(function(){
+    showMsg(form, M.err, true);
+  }).then(function(){ if(btn) btn.disabled = false; });
+}
+
+(function(){
+  // groepscursus
+  var cf = document.getElementById("course-form");
+  if(cf) cf.addEventListener("submit", function(e){
+    e.preventDefault();
+    var M = MSG[LANG] || MSG.nl, f = cf.elements;
+    var naam = f.naam.value.trim(), email = f.email.value.trim(), niveau = f.niveau.value;
+    if(!naam || !isMail(email)){ showMsg(cf, M.req, true); return; }
+    if(!niveau){ showMsg(cf, M.reqLvl, true); f.niveau.focus(); return; }
+    var avonden = Array.prototype.filter.call(cf.querySelectorAll('[name="avond"]'), function(c){ return c.checked; }).map(function(c){ return c.value; }).join(", ") || "-";
+    var data = {naam:naam, email:email, whatsapp:f.whatsapp.value.trim() || "-", niveau:niveau, avonden:avonden, tijd:f.tijd.value, doel:f.doel.value.trim() || "-", nieuwsbrief:f.nieuwsbrief.checked ? "ja" : "nee"};
+    var v = courseVars();
+    sendLead(cf, "Inschrijving cursus " + COURSE.start + ": " + naam + " (" + niveau + ")", data, fillTokens(M.okCourse, v),
+      ["Hoi Scip, ik wil me inschrijven voor de groepscursus (start " + v.start + ").", "Naam: " + naam, "E-mail: " + email, "Niveau: " + niveau, "Avonden: " + avonden, "Tijd: " + data.tijd, "Doel: " + data.doel]);
+  });
+
+  // gratis groepsles
+  var ff = document.getElementById("free-form");
+  if(ff) ff.addEventListener("submit", function(e){
+    e.preventDefault();
+    var M = MSG[LANG] || MSG.nl, email = ff.elements.email.value.trim();
+    if(!isMail(email)){ showMsg(ff, M.reqMail, true); return; }
+    sendLead(ff, "Gratis groepsles: " + email, {email:email, aanmelding:"gratis groepsles + nieuwsbrief"}, M.okFree,
+      ["Hoi Scip, ik wil graag meedoen met de gratis groepsles.", "E-mail: " + email]);
+  });
+
+  // pdf + nieuwsbrief
+  var pf = document.getElementById("pdf-form");
+  if(pf) pf.addEventListener("submit", function(e){
+    e.preventDefault();
+    var M = MSG[LANG] || MSG.nl, email = pf.elements.email.value.trim();
+    if(!isMail(email)){ showMsg(pf, M.reqMail, true); return; }
+    sendLead(pf, "Nieuwsbrief + pdf: " + email, {email:email, aanmelding:"nieuwsbrief + pdf"}, M.okPdf, null, function(){
+      var l = document.getElementById("pdf-link"); if(l) l.hidden = false;
+    });
+  });
+})();
+
+/* ---------------------------- niveautest ---------------------------- */
+var QZ = {
+  nl:{eyebrow:"Gratis niveautest",h1:"Wat is jouw niveau Nederlands?",intro:"15 korte vragen, van heel makkelijk tot best moeilijk. Aan het eind zie je of je ongeveer A0, A1, A2 of B1 bent, en wat je volgende stap is.",f1:"15 vragen",f2:"ongeveer 5 minuten",f3:"zonder aanmelden",tip:"Weet je een antwoord niet? Klik op \"Ik weet het niet\". Gokken maakt de uitslag minder precies.",start:"Start de test",idk:"Ik weet het niet",
+      fill:"Kies het goede woord",mean:"Wat betekent dit?",pick:"Welke zin is goed?",your:"Je niveau is ongeveer",score:"Je had er {n} van de 15 goed.",disclaimer:"Deze test meet lezen en grammatica, geen spreken. In de eerste les check ik je niveau goed.",
+      "s.h":"Krijg oefeningen voor jouw niveau","s.p":"Laat je e-mail achter en ik stuur je gratis oefeningen op jouw niveau.","s.naam":"Naam","s.email":"E-mailadres","s.course":"Laat me weten wanneer er een groep op mijn niveau start","s.send":"Stuur me oefeningen",
+      tocourse:"Bekijk de groepscursus",again:"Doe de test opnieuw",close:"Sluiten",
+      lv:{A0:["Beginner (A0)","Je begint (bijna) bij nul. Perfect moment om een goede basis te leggen: uitspraak, de handigste woorden en simpele zinnen."],A1:["A1","Je kent de basis: jezelf voorstellen en simpele vragen. Volgende stap: praten over het verleden en langere zinnen maken."],A2:["A2","Je redt je in alledaagse situaties. Dit is het niveau van het inburgeringsexamen. Volgende stap: bijzinnen, het woordje 'er' en vloeiender praten."],B1:["B1 of hoger","Je kunt al veel. Nu gaat het om nuance, snelheid en durven: werkoverleg, discussies en het Staatsexamen NT2."]}},
+  en:{eyebrow:"Free level test",h1:"What's your Dutch level?",intro:"15 short questions, from very easy to quite hard. At the end you'll see if you're about A0, A1, A2 or B1, and what your next step is.",f1:"15 questions",f2:"about 5 minutes",f3:"no sign-up needed",tip:"Don't know an answer? Click \"I don't know\". Guessing makes the result less accurate.",start:"Start the test",idk:"I don't know",
+      fill:"Choose the right word",mean:"What does this mean?",pick:"Which sentence is correct?",your:"Your level is about",score:"You got {n} out of 15 right.",disclaimer:"This test checks reading and grammar, not speaking. In the first lesson I check your level properly.",
+      "s.h":"Get exercises for your level","s.p":"Leave your email and I'll send you free exercises that match your level.","s.naam":"Name","s.email":"Email address","s.course":"Let me know when a group at my level starts","s.send":"Send me exercises",
+      tocourse:"See the group course",again:"Take the test again",close:"Close",
+      lv:{A0:["Beginner (A0)","You're starting from (almost) zero. Great moment to build a solid base: pronunciation, the most useful words and simple sentences."],A1:["A1","You know the basics: introducing yourself and simple questions. Next step: talking about the past and making longer sentences."],A2:["A2","You get by in everyday situations. This is the level of the inburgeringsexamen. Next step: subordinate clauses, the word 'er' and speaking more fluently."],B1:["B1 or higher","You can already do a lot. Now it's about nuance, speed and confidence: meetings, discussions and the Staatsexamen NT2."]}},
+  es:{eyebrow:"Test de nivel gratis",h1:"¿Cuál es tu nivel de neerlandés?",intro:"15 preguntas cortas, de muy fáciles a bastante difíciles. Al final verás si tienes más o menos un A0, A1, A2 o B1, y cuál es tu siguiente paso.",f1:"15 preguntas",f2:"unos 5 minutos",f3:"sin registrarte",tip:"¿No sabes una respuesta? Pulsa \"No lo sé\". Adivinar hace que el resultado sea menos preciso.",start:"Empezar el test",idk:"No lo sé",
+      fill:"Elige la palabra correcta",mean:"¿Qué significa?",pick:"¿Qué frase es correcta?",your:"Tu nivel es más o menos",score:"Acertaste {n} de 15.",disclaimer:"Este test mide lectura y gramática, no la expresión oral. En la primera clase compruebo tu nivel bien.",
+      "s.h":"Recibe ejercicios para tu nivel","s.p":"Deja tu email y te mando ejercicios gratis para tu nivel.","s.naam":"Nombre","s.email":"Email","s.course":"Avísame cuando empiece un grupo de mi nivel","s.send":"Mándame ejercicios",
+      tocourse:"Ver el curso en grupo",again:"Hacer el test otra vez",close:"Cerrar",
+      lv:{A0:["Principiante (A0)","Empiezas (casi) desde cero. Es el momento perfecto para una buena base: pronunciación, las palabras más útiles y frases simples."],A1:["A1","Conoces lo básico: presentarte y hacer preguntas simples. Siguiente paso: hablar del pasado y hacer frases más largas."],A2:["A2","Te defiendes en situaciones cotidianas. Es el nivel del inburgeringsexamen. Siguiente paso: oraciones subordinadas, la palabra 'er' y hablar con más fluidez."],B1:["B1 o más","Ya puedes hacer mucho. Ahora se trata de matices, rapidez y confianza: reuniones, debates y el Staatsexamen NT2."]}}
+};
+/* a = het goede antwoord (de volgorde wordt op het scherm gehusseld) */
+var QS = [
+  {t:"mean",p:"Hoe heet je?",o:{en:["What is your name?","How are you?","Where do you live?","How old are you?"],es:["¿Cómo te llamas?","¿Cómo estás?","¿Dónde vives?","¿Cuántos años tienes?"]},a:0},
+  {t:"fill",p:"Ik _ uit Spanje.",o:["kom","komt","komen","kommen"],a:0},
+  {t:"fill",p:"_ huis is groot.",o:["De","Het","Den","Des"],a:1},
+  {t:"mean",p:"Ik heb honger.",o:{en:["I'm hungry.","I'm tired.","I'm cold.","I'm late."],es:["Tengo hambre.","Estoy cansado.","Tengo frío.","Llego tarde."]},a:0},
+  {t:"fill",p:"Eén boek, twee _.",o:["boeks","boeken","boekken","boeke"],a:1},
+  {t:"pick",p:"",o:["Morgen ga ik naar Amsterdam.","Morgen ik ga naar Amsterdam.","Ik morgen ga naar Amsterdam.","Morgen naar Amsterdam ik ga."],a:0},
+  {t:"fill",p:"Gisteren _ ik een film gekeken.",o:["heb","ben","word","was"],a:0},
+  {t:"fill",p:"Ik _ gisteren naar huis gefietst.",o:["heb","ben","had","werd"],a:1},
+  {t:"fill",p:"Ik bel je morgen _.",o:["op","aan","in","uit"],a:0},
+  {t:"pick",p:"",o:["Ik blijf thuis, omdat ik ziek ben.","Ik blijf thuis, omdat ik ben ziek.","Ik blijf thuis, omdat ben ik ziek.","Ik blijf thuis, omdat ziek ik ben."],a:0},
+  {t:"fill",p:"Amsterdam is _ dan Utrecht.",o:["groter","meer groot","grootst","grote"],a:0},
+  {t:"fill",p:"Heb je nog koekjes? Ja, ik heb _ nog drie.",o:["er","het","ze","die"],a:0},
+  {t:"fill",p:"Vroeger _ ik elke dag naar school.",o:["liep","loopte","lopen","gelopen"],a:0},
+  {t:"fill",p:"Het boek _ ik nu lees, is spannend.",o:["dat","die","wat","wie"],a:0},
+  {t:"fill",p:"Als ik rijk _, zou ik een boot kopen.",o:["was","ben","word","heb"],a:0}
+];
+
+(function(){
+  var modal = document.getElementById("test"); if(!modal) return;
+  var $ = function(id){ return document.getElementById(id); };
+  var i = 0, score = 0, level = "A0", order = [], locked = false, lastFocus = null;
+  function t(k){ var d = QZ[LANG] || QZ.nl; return d[k] !== undefined ? d[k] : QZ.en[k]; }
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]; }); }
+  function opts(q){ return Array.isArray(q.o) ? q.o : (q.o[LANG] || q.o.en); }
+  function shuffle(n){ var a=[]; for(var k=0;k<n;k++) a.push(k); for(var j=n-1;j>0;j--){ var r=Math.floor(Math.random()*(j+1)); var x=a[j]; a[j]=a[r]; a[r]=x; } return a; }
+
+  window.quizLang = function(){
+    modal.querySelectorAll("[data-q]").forEach(function(el){ el.textContent = t(el.getAttribute("data-q")); });
+    $("q-close").setAttribute("aria-label", t("close"));
+    if(!$("q-quiz").hidden) render();
+    if(!$("q-result").hidden) showResult();
+  };
+
+  function view(name){ ["q-start","q-quiz","q-result"].forEach(function(v){ $(v).hidden = (v !== name); }); modal.querySelector(".tbox").scrollTop = 0; }
+  function open(){
+    lastFocus = document.activeElement;
+    modal.hidden = false; document.body.classList.add("locked");
+    if($("q-result").hidden && $("q-quiz").hidden) view("q-start");
+    window.quizLang(); $("q-close").focus();
+  }
+  function close(){
+    modal.hidden = true; document.body.classList.remove("locked");
+    if(location.hash === "#test") history.replaceState(null, "", location.pathname + location.search);
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  function start(){ i = 0; score = 0; order = QS.map(function(q){ return shuffle(opts(q).length); }); view("q-quiz"); render(); }
+
+  function render(){
+    var q = QS[i];
+    $("q-count").textContent = (i+1) + " / " + QS.length;
+    $("q-fill").style.width = (i / QS.length * 100) + "%";
+    $("q-ask").textContent = t(q.t);
+    var p = $("q-prompt"); p.innerHTML = q.p ? esc(q.p).replace("_", '<span class="gap"></span>') : ""; p.hidden = !q.p;
+    var box = $("q-opts"); box.innerHTML = ""; var list = opts(q);
+    order[i].forEach(function(idx, n){
+      var b = document.createElement("button"); b.type = "button"; b.className = "q-opt";
+      b.innerHTML = '<span class="k">' + "ABCD"[n] + '</span><span>' + esc(list[idx]) + '</span>';
+      b.addEventListener("click", function(){ answer(idx === q.a, b); });
+      box.appendChild(b);
+    });
+  }
+  function answer(ok, el){
+    if(locked) return; locked = true; if(ok) score++; if(el) el.classList.add("picked");
+    setTimeout(function(){ locked = false; i++; if(i < QS.length) render(); else finish(); }, el ? 220 : 0);
+  }
+  function finish(){
+    level = score <= 3 ? "A0" : score <= 7 ? "A1" : score <= 11 ? "A2" : "B1";
+    view("q-result"); showResult();
+    var sel = document.getElementById("cf-niveau"); if(sel) sel.value = level;
+  }
+  function showResult(){
+    var lv = t("lv")[level];
+    $("q-badge").textContent = level; $("q-title").textContent = lv[0];
+    $("q-score").textContent = t("score").replace("{n}", score); $("q-text").textContent = lv[1];
+    modal.querySelectorAll(".q-scale span").forEach(function(s){ s.classList.toggle("on", s.dataset.l === level); });
+  }
+
+  $("q-form").addEventListener("submit", function(e){
+    e.preventDefault();
+    var f = this, M = MSG[LANG] || MSG.nl, email = f.elements.email.value.trim(), naam = f.elements.naam.value.trim();
+    if(!isMail(email)){ showMsg(f, M.reqMail, true); return; }
+    sendLead(f, "Niveautest " + level + " (" + score + "/15): " + (naam || email),
+      {naam: naam || "-", email: email, niveau: level, score: score + "/15", cursus: f.elements.cursus.checked ? "ja, laat weten" : "nee"},
+      M.okQuiz.replace("{lvl}", level),
+      ["Hoi Scip, ik heb je niveautest gedaan: " + level + " (" + score + "/15).", "Naam: " + (naam || "-"), "E-mail: " + email, "Kun je me oefeningen sturen" + (f.elements.cursus.checked ? " en laten weten wanneer er een groep op mijn niveau start?" : "?")]);
+  });
+
+  document.addEventListener("click", function(e){
+    var a = e.target.closest && e.target.closest('a[href="#test"]');
+    if(a){ e.preventDefault(); open(); }
+  });
+  $("q-go").addEventListener("click", start);
+  $("q-again").addEventListener("click", start);
+  $("q-idk").addEventListener("click", function(){ answer(false, null); });
+  $("q-close").addEventListener("click", close);
+  $("q-tocourse").addEventListener("click", function(){ close(); });
+  modal.addEventListener("click", function(e){ if(e.target === modal) close(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape" && !modal.hidden) close(); });
+  if(location.hash === "#test") open();
+})();
 
 (function(){
   var nodes = document.querySelectorAll("[data-i18n]");
@@ -910,9 +1468,11 @@ var WA_PDF = {
     });
     document.documentElement.setAttribute("lang", lang);
     document.querySelectorAll("a.wa").forEach(function(a){
-      var msg = a.getAttribute("data-wa-msg") === "pdf" ? WA_PDF[lang] : WA_MSG[lang];
+      var kind = a.getAttribute("data-wa-msg");
+      var msg = kind === "pdf" ? WA_PDF[lang] : WA_MSG[lang];
       a.setAttribute("href", "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg));
     });
+    if(window.afterLang) window.afterLang(lang);
     syncVideo();
     try{ localStorage.setItem("scipio-lang", lang); }catch(e){}
   }
@@ -945,29 +1505,6 @@ var WA_PDF = {
     if(fr.getAttribute("src") !== src) fr.setAttribute("src", src);
   }
   syncVideo();
-
-  // pdf-aanvraag: formulier als er een endpoint is, anders WhatsApp
-  var form = document.getElementById("dl-form");
-  var note = document.getElementById("dl-note");
-  var waPdf = document.querySelector('.dl-or');
-  if(FORM_ENDPOINT && form){
-    form.hidden = false;
-    if(waPdf) waPdf.hidden = true;
-    form.addEventListener("submit", function(e){
-      e.preventDefault();
-      var email = document.getElementById("dl-email").value;
-      fetch(FORM_ENDPOINT, {
-        method:"POST",
-        headers:{"Content-Type":"application/json","Accept":"application/json"},
-        body: JSON.stringify({email: email, taal: current})
-      }).then(function(){
-        form.hidden = true;
-        if(note) note.textContent = (T[current] && T[current]["dl.ok"]) || "Onderweg. Check je mail over een minuutje.";
-      }).catch(function(){
-        if(note) note.textContent = "Er ging iets mis. Stuur me anders even een bericht op WhatsApp.";
-      });
-    });
-  }
 
   // rustige rotatie in de drietalige kaart
   var lines = document.querySelectorAll(".line3");
